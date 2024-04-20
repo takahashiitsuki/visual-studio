@@ -1,2 +1,11 @@
 let mySymbol1 = Symbol();
 let mySymbol2 = Symbol();
+
+const obj = {
+    [ mySymbl1 ]: "値1",
+    [ mySymbl2 ](){ console.log("こんにちは");}
+};
+
+console.log( obj[ mySymbl1 ]);
+
+obj[ mySymbl2 ]();
