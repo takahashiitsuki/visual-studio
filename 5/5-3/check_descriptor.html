@@ -1,3 +1,11 @@
 const obj = {prop: "値"};
  const propDesc = Reflect.getOwnPropertyDescriptor(obj, "prop");
  console.log(propDesc);
+
+const obj = {propl: "これは列挙可能プロパティです。"};
+ bReflect.defineProperty(obj, "prop2",{value: "これは列挙可能プロパティではありません。",
+enumerable:false});
+
+for(const key in obj){
+    console.log(key, obj[key]);
+}
