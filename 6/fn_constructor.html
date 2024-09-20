@@ -1,0 +1,7 @@
+//関数addをfunctionコンストラクタから作成
+const add = new Function("vall", "val2", "return val1 + val2;");
+
+//関数(add)の実行
+const result = add(1,2);
+
+console.log(result);
